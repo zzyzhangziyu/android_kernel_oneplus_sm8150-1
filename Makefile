@@ -443,7 +443,7 @@ LINUXINCLUDE    := \
 		$(USERINCLUDE)
 
 KBUILD_AFLAGS   := -D__ASSEMBLY__
-KBUILD_CFLAGS   := -Wall -Wno-array-bounds -Wno-format -Wno-maybe-uninitialized -Wno-unused-result -Wno-unused-variable -Wno-misleading-indentation -Wundef -Wstrict-prototypes -Wno-trigraphs \
+KBUILD_CFLAGS   := -Wno-array-bounds -Wno-format -Wno-maybe-uninitialized -Wno-unused-result -Wno-unused-variable -Wno-misleading-indentation -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common -fshort-wchar \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \

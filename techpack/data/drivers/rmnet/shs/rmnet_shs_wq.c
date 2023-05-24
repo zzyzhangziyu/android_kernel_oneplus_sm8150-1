@@ -2224,7 +2224,7 @@ int rmnet_shs_wq_get_max_flows_per_cluster(u16 cpu)
 	u16 start_core = 0;
 	u16 end_core = 4;
 	int max_flows = -1;
-	int cpu_flows;
+	int cpu_flows = 0;
 
 	if (cpu > MAX_CPUS) {
 		rmnet_shs_crit_err[RMNET_SHS_INVALID_CPU_ERR]++;

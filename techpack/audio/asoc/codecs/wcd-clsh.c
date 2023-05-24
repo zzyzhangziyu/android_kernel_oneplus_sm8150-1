@@ -47,7 +47,7 @@ static const char *mode_to_str(int mode)
 	};
 }
 
-static const char *state_to_str(u8 state, char *buf, size_t buflen)
+static char *state_to_str(u8 state, char *buf, size_t buflen)
 {
 	int i;
 	int cnt = 0;
@@ -71,7 +71,7 @@ static const char *state_to_str(u8 state, char *buf, size_t buflen)
 		if (!(state & (1 << i)))
 			continue;
 		cnt = snprintf(buf, buflen - cnt - 1, "%s%s%s", buf,
-			       buf[0] == '\0' ? "[" : "|",
+			       (buf[0] == '\0')? "[" : "|",
 			       states[i]);
 	}
 	if (cnt > 0)

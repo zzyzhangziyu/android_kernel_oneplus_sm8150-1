@@ -18757,15 +18757,15 @@ static const int mi2s_rx_vi_fb_tx_value[] = {
 };
 #else
 #ifndef OPLUS_FEATURE_OP_SPECIFIC_AUDIO_KERNEL
-static const int const mi2s_rx_vi_fb_tx_value[] = {
+static const int mi2s_rx_vi_fb_tx_value[] = {
 	MSM_BACKEND_DAI_MAX, MSM_BACKEND_DAI_TERTIARY_MI2S_TX
 };
 #else
-static const int const mi2s_rx_vi_fb_tx_value[] = {
+static const int mi2s_rx_vi_fb_tx_value[] = {
 	MSM_BACKEND_DAI_MAX, MSM_BACKEND_DAI_QUATERNARY_MI2S_TX
 };
 #endif
-static const int const mi2s_quat_rx_vi_fb_tx_value[] = {
+static const int mi2s_quat_rx_vi_fb_tx_value[] = {
 	MSM_BACKEND_DAI_MAX, MSM_BACKEND_DAI_QUATERNARY_MI2S_TX
 };
 #endif

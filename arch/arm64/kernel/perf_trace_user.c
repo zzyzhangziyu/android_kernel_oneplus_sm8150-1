@@ -32,7 +32,7 @@ static ssize_t perf_trace_write(struct file *file,
 {
 	u32 cnten_val;
 	int rc;
-	char buf[TRACE_USER_MAX_BUF_SIZE + 1];
+	char buf[TRACE_USER_MAX_BUF_SIZE + 1]={0};
 	ssize_t length;
 
 	if (len == 0)
